@@ -11,4 +11,5 @@ exports.max = function max (array) {
 
 exports.avg = function avg (array) {
   if (array === undefined || array.length === 0) return 0
+  return array.reduce((sum, n) => sum + n) / array.length
 }
